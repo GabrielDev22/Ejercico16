@@ -203,7 +203,7 @@
     
   } 
   console.log(diaDeLaSemana());
-   */
+  
   
   function empiezaConNueve(num) {
     //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
@@ -217,16 +217,29 @@
   
   console.log(empiezaConNueve(992))
   console.log(empiezaConNueve(299))
+ */
 
-  /* 
   function todosIguales(arreglo) {
     //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
     //retornar true, caso contrario retornar false.
     //Escribe tu código aquí  
-    
+
+    let j = 0
+
+    for (let i = 0; i < arreglo.length; i++) {
+      if (arreglo[i] !== arreglo[j + 1])
+        return false
+    }
+
+    return true
   } 
   
+  console.log(todosIguales([3,3,3]))
+  console.log(todosIguales([3,3,1]))
+  console.log(todosIguales([3,1,3]))
+  console.log(todosIguales([1,3,3]))
   
+  /* 
   function mesesDelAño(array) {
     //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de 
     // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
