@@ -160,19 +160,33 @@
     const mayor = Math.max(...numeros) 
     return mayor
   }
-  console.log(numeroMasGrande());
+  console.log(numeroMasGrande()); */
   
   
   function multiplicarArgumentos() {
     // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
     // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
     // Escribe tu código aquí:
+  let productoria = 1
+  
+  if (arguments.length === 0){
+    return 0
+  } else if (arguments.length === 1){
+    return arguments[0]
+  } else {
+    for (let i = 0; i < arguments.length; i++) {
+      productoria*= arguments[i]
+    }
+  }
 
-
+  return productoria
   }
   
-  
-  function cuentoElementos(arreglo){
+  console.log(`La Productoria de multiplicarArgumentos(3,3,3) es: ${multiplicarArgumentos(3,3,3)}`)
+  console.log(`La Productoria de multiplicarArgumentos(145) es: ${multiplicarArgumentos(145)}`)
+  console.log(`La Productoria de multiplicarArgumentos() es: ${multiplicarArgumentos()}`)
+
+ /*  function cuentoElementos(arreglo){
     //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
     //Escribe tu código aquí
     // Tu código:
@@ -217,7 +231,7 @@
   
   console.log(empiezaConNueve(992))
   console.log(empiezaConNueve(299))
- */
+
 
   function todosIguales(arreglo) {
     //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
@@ -238,8 +252,8 @@
   console.log(todosIguales([3,3,1]))
   console.log(todosIguales([3,1,3]))
   console.log(todosIguales([1,3,3]))
+
   
-  /* 
   function mesesDelAño(array) {
     //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de 
     // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
