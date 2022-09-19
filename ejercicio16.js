@@ -126,7 +126,7 @@
     return sum
   }
   console.log(agregarNumeros());
-   */
+  
   
   function promedioResultadosTest(resultadosTest) {
     // "resultadosTest" debe ser una matriz de enteros (int/integers)
@@ -150,9 +150,8 @@
   }
 
   console.log(promedioResultadosTest([[2,4,8],[9,6,7],[1,1,1]]));
-  //promedioResultadosTest()
   
-  /* 
+  
   function numeroMasGrande(numeros) {
     // "numeros" debe ser una matriz de enteros (int/integers)
     // Devuelve el número más grande
@@ -204,16 +203,22 @@
     
   } 
   console.log(diaDeLaSemana());
+   */
   
-  
-  function empiezaConNueve(n) {
+  function empiezaConNueve(num) {
     //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
     //inicia con 9 y false en otro caso.
     //Escribe tu código aquí
     
+    const numero = num.toString()
+
+    return (numero[0] === "9") ? true : false
   }
   
-  
+  console.log(empiezaConNueve(992))
+  console.log(empiezaConNueve(299))
+
+  /* 
   function todosIguales(arreglo) {
     //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
     //retornar true, caso contrario retornar false.
