@@ -1,4 +1,4 @@
-function devolverPrimerElemento(array) {
+/* function devolverPrimerElemento(array) {
     // Devuelve el primer elemento de un  array (pasado por parametro)
     // Tu código:
     array = ["Manzana", "Pera", "Mandarina", "Frutilla", "Durazno"];
@@ -126,20 +126,33 @@ function devolverPrimerElemento(array) {
     return sum
   }
   console.log(agregarNumeros());
-  
+   */
   
   function promedioResultadosTest(resultadosTest) {
     // "resultadosTest" debe ser una matriz de enteros (int/integers)
     // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
     // Tu código:
+    
+    const array = []
+    let promedio = 0
 
+    resultadosTest.forEach(lista => {
+      let sumatoria = 0
+      for (let i = 0; i < lista.length; i++) {
+        sumatoria += lista[i]
+      }
+      promedio = sumatoria / lista.length
+      array.push(promedio) 
+      promedio = 0
+    });
 
-
-
+    return array
   }
-  console.log(promedioResultadosTest());
+
+  console.log(promedioResultadosTest([[2,4,8],[9,6,7],[1,1,1]]));
+  //promedioResultadosTest()
   
-  
+  /* 
   function numeroMasGrande(numeros) {
     // "numeros" debe ser una matriz de enteros (int/integers)
     // Devuelve el número más grande
@@ -251,4 +264,4 @@ function devolverPrimerElemento(array) {
     //Pista: usá el statement 'continue'
     // Tu código:
   }
-  
+   */
