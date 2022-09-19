@@ -132,8 +132,8 @@
     // "resultadosTest" debe ser una matriz de enteros (int/integers)
     // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
     // Tu código:
-    
-    const array = []
+
+    const arrayPromedios = []
     let promedio = 0
 
     resultadosTest.forEach(lista => {
@@ -142,11 +142,11 @@
         sumatoria += lista[i]
       }
       promedio = sumatoria / lista.length
-      array.push(promedio) 
+      arrayPromedios.push(promedio) 
       promedio = 0
     });
 
-    return array
+    return arrayPromedios
   }
 
   console.log(promedioResultadosTest([[2,4,8],[9,6,7],[1,1,1]]));
