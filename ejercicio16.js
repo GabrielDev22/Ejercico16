@@ -282,7 +282,7 @@
   console.log(mayorACien([3,300,45,134,7,150]))
   console.log(mayorACien([3,30,45,34,7,15]))
   console.log(mayorACien([180,1]))
-   */
+  
   
   function breakStatement(numero) {
     //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
@@ -309,16 +309,28 @@
   }
   
 console.log(breakStatement(3))
-console.log(breakStatement(-2))
+console.log(breakStatement(-2)) */
 
-/*   function continueStatement(numero) {
-    //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
-    //Guardar cada nuevo valor en un array.    
-    //Devolver el array
-    //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
-    //Pista: usá el statement 'continue'
-    // Tu código:
+function continueStatement(numero) {
+  //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
+  //Guardar cada nuevo valor en un array.
+  //Devolver el array
+  //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
+  //Pista: usá el statement 'continue'
+  // Tu código:
+
+  const array = [];
+
+  for (let i = 1; i <= 10; i++) {
+
+    if (i == 5)
+      continue
+    
+    array.push(numero += 2)
+
   }
-  
 
- */
+  return array; 
+}
+
+console.log(continueStatement(1));
