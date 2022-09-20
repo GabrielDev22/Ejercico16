@@ -218,7 +218,7 @@
   } 
   console.log(diaDeLaSemana());
   
-   */
+  
   function empiezaConNueve(num) {
     //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
     //inicia con 9 y false en otro caso.
@@ -232,7 +232,7 @@
   console.log(empiezaConNueve(92))
   console.log(empiezaConNueve(299))
 
-/* 
+
   function todosIguales(arreglo) {
     //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
     //retornar true, caso contrario retornar false.
@@ -267,16 +267,24 @@
     });
   }
   mesesDelAño();
-
-  
+ */
   
   function mayorACien(array) {
     //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
     //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
     // Tu código:
+
+    const mayoresACien = array.filter(numero => numero>100)
+    
+    return mayoresACien
   }
+
+  console.log(mayorACien([3,300,45,134,7,150]))
+  console.log(mayorACien([3,30,45,34,7,15]))
+  console.log(mayorACien([180,1]))
   
   
+  /* 
   function breakStatement(numero) {
     //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
     //Guardar cada nuevo valor en un array. 
@@ -296,4 +304,5 @@
     //Pista: usá el statement 'continue'
     // Tu código:
   }
-   */
+  
+ */
