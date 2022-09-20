@@ -1,4 +1,4 @@
-/* function devolverPrimerElemento(array) {
+ function devolverPrimerElemento(array) {
     // Devuelve el primer elemento de un  array (pasado por parametro)
     // Tu código:
     array = ["Manzana", "Pera", "Mandarina", "Frutilla", "Durazno"];
@@ -132,12 +132,7 @@
     // "resultadosTest" debe ser una matriz de enteros (int/integers)
     // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
     // Tu código:
-
-<<<<<<< HEAD
-  }
  
-  
-=======
     const arrayPromedios = []
     let promedio = 0
 
@@ -153,9 +148,8 @@
 
     return arrayPromedios
   }
-
   console.log(promedioResultadosTest([[2,4,8],[9,6,7],[1,1,1]]));
->>>>>>> bc33dcba84fee3c7af84b20346d01cf5533014b9
+
   
   
   function numeroMasGrande(numeros) {
@@ -184,11 +178,7 @@
       productoria*= arguments[i]
     }
   }
-
-<<<<<<< HEAD
-=======
   return productoria
->>>>>>> bc33dcba84fee3c7af84b20346d01cf5533014b9
   }
  
   
@@ -225,28 +215,16 @@
       return 'Es dia laboral'
     }
   } 
-  
-  
-<<<<<<< HEAD
-  
-=======
->>>>>>> bc33dcba84fee3c7af84b20346d01cf5533014b9
+
   function empiezaConNueve(num) {
     //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
     //inicia con 9 y false en otro caso.
     //Escribe tu código aquí
-<<<<<<< HEAD
-=======
     
     const arrayNumerosString = [num].join('')
 
     return (arrayNumerosString[0] === "9") ? true : false
->>>>>>> bc33dcba84fee3c7af84b20346d01cf5533014b9
   }
- 
-
-  
-  
   console.log(empiezaConNueve(92))
   console.log(empiezaConNueve(299))
 
@@ -328,7 +306,7 @@
   }
   
 console.log(breakStatement(3))
-console.log(breakStatement(-2)) */
+console.log(breakStatement(-2)) 
 
 function continueStatement(numero) {
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
