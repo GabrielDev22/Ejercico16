@@ -160,7 +160,7 @@
     const mayor = Math.max(...numeros) 
     return mayor
   }
-  console.log(numeroMasGrande()); */
+  console.log(numeroMasGrande());
   
   
   function multiplicarArgumentos() {
@@ -186,7 +186,7 @@
   console.log(`La Productoria de multiplicarArgumentos(145) es: ${multiplicarArgumentos(145)}`)
   console.log(`La Productoria de multiplicarArgumentos() es: ${multiplicarArgumentos()}`)
 
- /*  function cuentoElementos(arreglo){
+  function cuentoElementos(arreglo){
     //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
     //Escribe tu código aquí
     // Tu código:
@@ -218,21 +218,21 @@
   } 
   console.log(diaDeLaSemana());
   
-  
+   */
   function empiezaConNueve(num) {
     //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
     //inicia con 9 y false en otro caso.
     //Escribe tu código aquí
     
-    const numero = num.toString()
+    const arrayNumerosString = [num].join('')
 
-    return (numero[0] === "9") ? true : false
+    return (arrayNumerosString[0] === "9") ? true : false
   }
   
-  console.log(empiezaConNueve(992))
+  console.log(empiezaConNueve(92))
   console.log(empiezaConNueve(299))
 
-
+/* 
   function todosIguales(arreglo) {
     //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
     //retornar true, caso contrario retornar false.
