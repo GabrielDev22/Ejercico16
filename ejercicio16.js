@@ -133,11 +133,9 @@ function devolverPrimerElemento(array) {
     // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
     // Tu código:
 
-
-
-
   }
-  console.log(promedioResultadosTest());
+ 
+  
   
   
   function numeroMasGrande(numeros) {
@@ -156,8 +154,8 @@ function devolverPrimerElemento(array) {
     // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
     // Escribe tu código aquí:
 
-
   }
+ 
   
   
   function cuentoElementos(arreglo){
@@ -188,17 +186,18 @@ function devolverPrimerElemento(array) {
     }else {
       return 'Es dia laboral'
     }
-    
   } 
-  console.log(diaDeLaSemana());
   
   
-  function empiezaConNueve(n) {
+  
+  function empiezaConNueve(num) {
     //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
     //inicia con 9 y false en otro caso.
     //Escribe tu código aquí
-    
   }
+ 
+
+  
   
   
   function todosIguales(arreglo) {
@@ -218,7 +217,8 @@ function devolverPrimerElemento(array) {
     array = ['Febrero', 'Enero', 'Octubre', 'Noviembre', 'Junio', 'Abril', 'Agosto', 'Marzo', 'Diciembre', 'Mayo', 'Julio', 'Septiembre'];
 
     array.forEach(element => {
-        console.log(element)
+      let nuevoArray = array.filter(mes => mes == 'Enero' || mes == 'Marzo' || mes == 'Noviembre')
+        console.log(`${nuevoArray[0]} ${nuevoArray[1]} ${nuevoArray[2]}`)
     });
   }
   mesesDelAño();
