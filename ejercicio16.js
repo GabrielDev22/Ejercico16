@@ -267,7 +267,7 @@
     });
   }
   mesesDelAño();
- */
+
   
   function mayorACien(array) {
     //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
@@ -282,21 +282,36 @@
   console.log(mayorACien([3,300,45,134,7,150]))
   console.log(mayorACien([3,30,45,34,7,15]))
   console.log(mayorACien([180,1]))
+   */
   
-  
-  /* 
   function breakStatement(numero) {
     //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
     //Guardar cada nuevo valor en un array. 
     //Devolver el array
-    //Si en algún momento el valor de la suma y la cantidad de iteraciones coinciden, debe interrumpirse la ejecución y 
+    //Si en algún momento el valor de la suma y la cantidad de iteraciones coinciden, debe 
+    //interrumpirse la ejecución y 
     //devolver: "Se interrumpió la ejecución"
     //Pista: usá el statement 'break'
     // Tu código:
+
+    const array = []
+
+    for (let i = 1; i <= 10; i++) {
+      
+      if ((numero+=2) == i){
+        console.log("Se interrumpio la ejecución")
+        break
+      }
+      array.push(numero)      
+    }
+
+    return array
   }
   
-  
-  function continueStatement(numero) {
+console.log(breakStatement(3))
+console.log(breakStatement(-2))
+
+/*   function continueStatement(numero) {
     //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
     //Guardar cada nuevo valor en un array.    
     //Devolver el array
@@ -305,4 +320,5 @@
     // Tu código:
   }
   
+
  */
