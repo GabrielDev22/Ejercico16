@@ -3,9 +3,7 @@
     // Tu código:
     array = ["Manzana", "Pera", "Mandarina", "Frutilla", "Durazno"];
 
-    array.shift();
-
-    return array
+    return array[0]
     
   }
   console.log(devolverPrimerElemento());
@@ -14,11 +12,11 @@
   function devolverUltimoElemento(array) {
     // Devuelve el último elemento de un array
     // Tu código:
-    array = ["Manzana", "Pera", "Mandarina", "Frutilla", "Durazno"];
+    array = ["Manzana", "Pera", "Mandarina", "Frutilla", "Durazno", "Banana"];
 
-    array.pop();
+    const lastArray = array[array.length-1];
 
-    return array
+    return lastArray
 
   }
   console.log(devolverUltimoElemento());
