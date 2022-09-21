@@ -1,4 +1,4 @@
- function devolverPrimerElemento(array) {
+/*  function devolverPrimerElemento(array) {
     // Devuelve el primer elemento de un  array (pasado por parametro)
     // Tu código:
     array = ["Manzana", "Pera", "Mandarina", "Frutilla", "Durazno"];
@@ -205,7 +205,7 @@
     //Escribe tu código aquí   
 
     diaSemana = [1,2,3,4,5,6,7];
-    numeroDeDia = 7
+    //numeroDeDia = 7
 
     if(diaSemana[0] == numeroDeDia || diaSemana[6] == numeroDeDia){
       return 'Es fin de semana'
@@ -245,25 +245,28 @@
   console.log(todosIguales([3,3,3]))
   console.log(todosIguales([3,3,1]))
   console.log(todosIguales([3,1,3]))
-  console.log(todosIguales([1,3,3]))
+  console.log(todosIguales([1,3,3])) */
 
-  
-  function mesesDelAño(array) {
-    //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de 
-    // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
-    //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
-    // Tu código:
+function mesesDelAño(array) {
+  //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de
+  // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
+  //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
+  // Tu código:
 
-    array = ['Febrero', 'Enero', 'Octubre', 'Noviembre', 'Junio', 'Abril', 'Agosto', 'Marzo', 'Diciembre', 'Mayo', 'Julio', 'Septiembre'];
+  const buscados = [];
 
-    array.forEach(element => {
-      let nuevoArray = array.filter(mes => mes == 'Enero' || mes == 'Marzo' || mes == 'Noviembre')
-        console.log(`${nuevoArray[0]} ${nuevoArray[1]} ${nuevoArray[2]}`)
-    });
-  }
-  mesesDelAño();
+  array.forEach((mes) => {
+    if (mes == "Enero" || mes == "Marzo" || mes == "Noviembre") {
+      buscados.push(mes);
+    }
+  });
 
-  
+  return buscados.length !== 3 ? "No se encontraron los meses pedidos" : buscados;
+}
+
+console.log(mesesDelAño(['Enero','Diciembre']));
+console.log(mesesDelAño(['Enero','Diciembre','Noviembre','Marzo']));
+/* 
   function mayorACien(array) {
     //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
     //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
@@ -329,3 +332,4 @@ function continueStatement(numero) {
 }
 
 console.log(continueStatement(1));
+ */
