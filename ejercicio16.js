@@ -1,4 +1,4 @@
-/*  function devolverPrimerElemento(array) {
+ function devolverPrimerElemento(array) {
     // Devuelve el primer elemento de un  array (pasado por parametro)
     // Tu código:
     array = ["Manzana", "Pera", "Mandarina", "Frutilla", "Durazno"];
@@ -245,7 +245,7 @@
   console.log(todosIguales([3,3,3]))
   console.log(todosIguales([3,3,1]))
   console.log(todosIguales([3,1,3]))
-  console.log(todosIguales([1,3,3])) */
+  console.log(todosIguales([1,3,3]))
 
 function mesesDelAño(array) {
   //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de
@@ -266,7 +266,8 @@ function mesesDelAño(array) {
 
 console.log(mesesDelAño(['Enero','Diciembre']));
 console.log(mesesDelAño(['Enero','Diciembre','Noviembre','Marzo']));
-/* 
+
+
   function mayorACien(array) {
     //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
     //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
@@ -332,4 +333,4 @@ function continueStatement(numero) {
 }
 
 console.log(continueStatement(1));
- */
+
