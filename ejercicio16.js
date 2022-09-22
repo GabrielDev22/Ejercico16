@@ -205,7 +205,7 @@
     //Escribe tu código aquí   
 
     diaSemana = [1,2,3,4,5,6,7];
-    numeroDeDia = 7
+    numeroDeDia = 1
 
     if(diaSemana[0] == numeroDeDia || diaSemana[6] == numeroDeDia){
       return 'Es fin de semana'
@@ -213,6 +213,7 @@
       return 'Es dia laboral'
     }
   } 
+  console.log(diaDeLaSemana());
 
   function empiezaConNueve(num) {
     //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
